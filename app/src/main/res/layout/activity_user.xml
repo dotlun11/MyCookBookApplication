@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kaildyhoang.mycookbookapplication.UserActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom">
+
+                        <ImageView
+                            android:id="@+id/imageViewCoverUser"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_margin="0dp"
+                            android:background="#e2e2e2"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/camera_icon" />
+
+                        <ImageView
+                            android:id="@+id/imageViewAvatarUser"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="bottom|center"
+                            android:layout_marginTop="150dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/camera_icon" />
+
+                    </FrameLayout>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/textViewNameUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="UserName"
+                    android:textAlignment="center"
+                    android:textSize="30sp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/buttonFollow"
+                    android:text="Follow"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/buttonToPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Create your world..." />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/recyclerViewUser"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

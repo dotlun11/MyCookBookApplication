@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kaildyhoang.mycookbookapplication.SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewGetImageSU"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/ic_launcher" />
+
+
+            <EditText
+                android:id="@+id/editTextInputNameSU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter your name..." />
+
+            <EditText
+                android:id="@+id/editTextInputBirthDaySU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter your birthday..." />
+
+            <RadioGroup
+                android:id="@+id/radioGroupGenderSU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender: " />
+
+                <RadioButton
+                    android:id="@+id/radioButtonMaleSU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonFemaleSU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOthersSU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Others" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editTextInputEmailSU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter your email..."
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editTextInputUserNameSU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter your user name..." />
+
+            <EditText
+                android:id="@+id/editTextInputPasswordSU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter your password..."
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/editTextInputAddressSU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter your address..." />
+
+            <EditText
+                android:id="@+id/editTextInputDescriptionSU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter your description..."
+                android:inputType="textMultiLine"
+                android:lines="3" />
+
+            <Button
+                android:id="@+id/buttonSignUpSU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SIGN UP" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

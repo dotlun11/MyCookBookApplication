@@ -1,0 +1,5 @@
+<root>
+    <item name='com.google.firebase.database.DataSnapshot T getValue(java.lang.Class&lt;T&gt;)'>
+        <annotation name='android.support.annotation.NonNull' />
+    </item>
+</root>
